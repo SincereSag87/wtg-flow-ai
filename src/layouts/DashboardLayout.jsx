@@ -1,15 +1,15 @@
 import { Bell, Command, Search, ShieldCheck } from 'lucide-react'
 import Sidebar from '../components/Sidebar'
 
-function DashboardLayout({ children }) {
+function DashboardLayout({ activePage, onPageChange, children }) {
   return (
     <div className="app-shell">
-      <Sidebar />
+      <Sidebar activePage={activePage} onPageChange={onPageChange} />
       <div className="dashboard-frame">
         <header className="topbar">
           <div>
             <p className="eyebrow">Build. Automate. Scale.</p>
-            <h2>Overview</h2>
+            <h2>{activePage}</h2>
           </div>
           <div className="topbar-actions" aria-label="Dashboard tools">
             <label className="search-field">

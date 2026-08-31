@@ -1,7 +1,7 @@
 import { ChevronsUpDown, Sparkles } from 'lucide-react'
 import { navItems } from '../data/dashboardData'
 
-function Sidebar() {
+function Sidebar({ activePage, onPageChange }) {
   return (
     <aside className="sidebar" aria-label="Primary navigation">
       <div className="brand-lockup">
@@ -17,13 +17,21 @@ function Sidebar() {
       <nav className="sidebar-nav">
         {navItems.map((item) => {
           const Icon = item.icon
+          const isActive = item.label === activePage
+          const isEnabled = item.label === 'Overview' || item.label === 'AI Agents'
 
           return (
             <button
-              className={`nav-item${item.active ? ' active' : ''}`}
+              className={`nav-item${isActive ? ' active' : ''}`}
               type="button"
               key={item.label}
-              aria-current={item.active ? 'page' : undefined}
+              aria-current={isActive ? 'page' : undefined}
+              aria-disabled={isEnabled ? undefined : 'true'}
+              onClick={() => {
+                if (isEnabled) {
+                  onPageChange(item.label)
+                }
+              }}
             >
               <Icon size={18} aria-hidden="true" />
               <span>{item.label}</span>

@@ -16,7 +16,7 @@ import {
 } from 'lucide-react'
 
 export const navItems = [
-  { label: 'Overview', icon: LayoutDashboard, active: true },
+  { label: 'Overview', icon: LayoutDashboard },
   { label: 'AI Agents', icon: Bot },
   { label: 'Workflow Builder', icon: GitBranch },
   { label: 'Automations', icon: Workflow },
