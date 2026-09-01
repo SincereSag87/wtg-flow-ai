@@ -12,17 +12,31 @@ function Overview() {
     <div className="overview-page">
       <section className="hero-panel" aria-labelledby="dashboard-title">
         <div>
-          <div className="status-indicator">
-            <span aria-hidden="true" />
-            All systems operational
+          <div className="overview-brand-row">
+            <div className="overview-logo-mark" aria-hidden="true">WTG</div>
+            <div className="status-indicator">
+              <span aria-hidden="true" />
+              All systems operational
+            </div>
           </div>
           <h1 id="dashboard-title">WTG Flow AI</h1>
           <p>AI automation built for real businesses.</p>
         </div>
-        <div className="hero-stats" aria-label="Live automation summary">
-          <span>Live workflows</span>
-          <strong>38</strong>
-          <small>Across support, finance, sales, and operations</small>
+        <div className="hero-visual" role="img" aria-label="WTG Flow AI automation preview">
+          <div className="hero-visual-header">
+            <span>WTG Flow</span>
+            <strong>Live automation map</strong>
+          </div>
+          <div className="hero-visual-flow">
+            <span>Trigger</span>
+            <span>AI Agent</span>
+            <span>Decision</span>
+            <span>Action</span>
+          </div>
+          <div className="hero-visual-metrics">
+            <div><strong>98.4%</strong><span>Success</span></div>
+            <div><strong>147h</strong><span>Saved</span></div>
+          </div>
         </div>
       </section>
 

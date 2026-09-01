@@ -122,9 +122,18 @@ Recommended captures:
 
 ## CodePen
 
-Interactive UI demo link: _Coming soon_
+Interactive UI demo link: https://promoted-smoke-troll.codepen.app
 
-Recommended adaptation: convert the core app shell, mock data, and CSS into a single CodePen demo focused on Overview, Workflow Builder, command menu, and one detail drawer interaction.
+CodePen export files are available in:
+
+```text
+codepen/
+  index.html
+  styles.css
+  app.js
+```
+
+Recommended adaptation: use the existing `codepen/` export for a lightweight standalone demo focused on Overview, Workflow Builder, command menu, and key dashboard interactions.
 
 ## Dribbble
 
