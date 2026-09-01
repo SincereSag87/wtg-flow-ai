@@ -2,7 +2,7 @@
 
 WTG Flow AI is a polished dark AI SaaS dashboard concept for an AI automation operating system. The product concept helps businesses create AI agents, build workflows, monitor automation runs, review execution activity, and measure business impact.
 
-This Phase 2 build includes the Overview dashboard and a polished AI Agents management experience for future portfolio, CodePen, and Dribbble case-study work.
+This Phase 3 build includes the Overview dashboard, AI Agents management, and an interactive Workflow Builder for future portfolio, CodePen, and Dribbble case-study work.
 
 ## Screenshot
 
@@ -20,6 +20,10 @@ Add final project screenshots here after publishing the first visual case study.
 - AI agent management page with searchable, filterable agent cards
 - Client-side agent detail drawer with performance, capabilities, workflows, configuration, and activity
 - Lightweight mock Create Agent flow that adds draft agents to the current session
+- Interactive Workflow Builder with a visual node canvas and polished connector paths
+- Node library for triggers, AI steps, logic, actions, and human review
+- Node configuration panel with local state updates and numeric positioning controls
+- Workflow templates, client-side validation, mock test execution, and mock publishing
 - Responsive desktop-first layout with tablet and mobile support
 - Keyboard-visible focus states and semantic dashboard structure
 
@@ -52,7 +56,7 @@ npm run preview
 
 ## Portfolio Purpose
 
-WTG Flow AI is designed as a portfolio-grade interface project that demonstrates product thinking, reusable React architecture, dashboard UI composition, client-side filtering, accessible drawer/dialog interactions, responsive CSS, and visual polish suitable for GitHub, CodePen, and Dribbble.
+WTG Flow AI is designed as a portfolio-grade interface project that demonstrates product thinking, reusable React architecture, dashboard UI composition, client-side filtering, accessible drawer/dialog interactions, visual workflow design, local workflow simulation, responsive CSS, and visual polish suitable for GitHub, CodePen, and Dribbble.
 
 ## Dribbble
 
@@ -65,7 +69,7 @@ Interactive UI demo link: _Coming soon_
 ## Future Roadmap
 
 - Phase 2: AI Agents page with agent cards, filters, detail panels, and mock creation flow
-- Phase 3: Workflow Builder prototype with interactive nodes and connector editing
+- Phase 3: Workflow Builder with interactive nodes, configuration, templates, validation, test execution, and publishing
 - Phase 4: Automations and Integrations pages with filtering and setup states
 - Phase 5: Analytics and Activity views with deeper charts and audit timelines
 - Phase 6: Authentication, backend, database, and API integration
