@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import DashboardLayout from './layouts/DashboardLayout'
 import Agents from './pages/Agents'
+import Activity from './pages/Activity'
+import Analytics from './pages/Analytics'
 import Automations from './pages/Automations'
 import Integrations from './pages/Integrations'
 import Overview from './pages/Overview'
@@ -13,6 +15,8 @@ const pages = {
   'Workflow Builder': WorkflowBuilder,
   Automations,
   Integrations,
+  Analytics,
+  Activity,
 }
 
 function App() {

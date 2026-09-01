@@ -18,7 +18,7 @@ function Sidebar({ activePage, onPageChange }) {
         {navItems.map((item) => {
           const Icon = item.icon
           const isActive = item.label === activePage
-          const isEnabled = ['Overview', 'AI Agents', 'Workflow Builder', 'Automations', 'Integrations'].includes(item.label)
+          const isEnabled = ['Overview', 'AI Agents', 'Workflow Builder', 'Automations', 'Integrations', 'Analytics', 'Activity'].includes(item.label)
 
           return (
             <button
