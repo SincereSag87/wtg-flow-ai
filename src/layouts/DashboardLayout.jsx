@@ -1,7 +1,7 @@
-import { Bell, Command, Search, ShieldCheck } from 'lucide-react'
+import { Bell, Command, ListChecks, Search, ShieldCheck } from 'lucide-react'
 import Sidebar from '../components/Sidebar'
 
-function DashboardLayout({ activePage, onPageChange, children }) {
+function DashboardLayout({ activePage, onPageChange, onOpenCommand, onOpenOnboarding, children }) {
   return (
     <div className="app-shell">
       <Sidebar activePage={activePage} onPageChange={onPageChange} />
@@ -12,13 +12,16 @@ function DashboardLayout({ activePage, onPageChange, children }) {
             <h2>{activePage}</h2>
           </div>
           <div className="topbar-actions" aria-label="Dashboard tools">
-            <label className="search-field">
+            <button className="search-field command-search" type="button" onClick={onOpenCommand} aria-label="Open command menu">
               <Search size={17} aria-hidden="true" />
-              <span className="sr-only">Search automations</span>
-              <input type="search" placeholder="Search workflows, agents..." />
-            </label>
-            <button className="icon-button" type="button" aria-label="Command menu">
+              <span>Search or jump to...</span>
+              <kbd>Ctrl K</kbd>
+            </button>
+            <button className="icon-button" type="button" aria-label="Open command menu" onClick={onOpenCommand}>
               <Command size={18} aria-hidden="true" />
+            </button>
+            <button className="icon-button" type="button" aria-label="Open onboarding checklist" onClick={onOpenOnboarding}>
+              <ListChecks size={18} aria-hidden="true" />
             </button>
             <button className="icon-button notification-dot" type="button" aria-label="Notifications">
               <Bell size={18} aria-hidden="true" />

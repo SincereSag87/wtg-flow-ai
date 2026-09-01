@@ -1,35 +1,38 @@
 # WTG Flow AI
 
-WTG Flow AI is a polished dark AI SaaS dashboard concept for an AI automation operating system. The product concept helps businesses create AI agents, build workflows, monitor automation runs, review execution activity, and measure business impact.
+Build. Automate. Scale.
 
-This Phase 5 build includes the Overview dashboard, AI Agents management, an interactive Workflow Builder, Automations, Integrations, Analytics, and Activity monitoring for future portfolio, CodePen, and Dribbble case-study work.
+WTG Flow AI is a fictional AI automation operating system designed to demonstrate modern product design and front-end engineering. It presents a portfolio-grade SaaS interface for creating AI agents, designing workflows, managing automations, connecting integrations, reviewing operational analytics, tracing activity, and configuring workspace settings.
 
-## Screenshot
+This is a demo product that uses realistic fictional mock data. It does not include authentication, a backend, a database, real AI execution, real API integrations, billing, or production secrets.
 
-Add final project screenshots here after publishing the first visual case study.
+## Overview
+
+WTG Flow AI is built as a polished dark SaaS dashboard for GitHub portfolio review, CodePen adaptation, and Dribbble UI/UX presentation. The product concept focuses on how business teams could build and operate AI-powered automations from one connected workspace.
 
 ## Features
 
-- Premium dark SaaS application shell with sidebar navigation and top header
-- Overview dashboard with operational status and primary KPI cards
-- Signature Agent Workflow diagram built with React, CSS, and SVG
-- Automation Performance chart showing 7-day activity
-- Active Agents list with realistic statuses, task counts, success rates, and timestamps
-- Recent Runs table with workflow execution status states
-- Business Impact summary with practical operating metrics
-- AI agent management page with searchable, filterable agent cards
-- Client-side agent detail drawer with performance, capabilities, workflows, configuration, and activity
-- Lightweight mock Create Agent flow that adds draft agents to the current session
-- Interactive Workflow Builder with a visual node canvas and polished connector paths
-- Node library for triggers, AI steps, logic, actions, and human review
-- Node configuration panel with local state updates and numeric positioning controls
-- Workflow templates, client-side validation, mock test execution, and mock publishing
-- Automations management with operational health monitoring, filtering, run history, run inspection, and mock creation
-- Integrations catalog with category filtering, mock connection setup, configuration controls, and activity monitoring
-- Analytics with executive KPIs, performance trends, agent rankings, automation rankings, business impact, and failure analytics
-- Activity monitoring with event filtering, execution traces, error details, human review events, live update simulation, and audit logs
-- Responsive desktop-first layout with tablet and mobile support
-- Keyboard-visible focus states and semantic dashboard structure
+- Premium dark application shell with responsive sidebar navigation and top command affordance
+- Overview dashboard with KPIs, workflow visualization, recent runs, agent activity, and business impact
+- AI Agents management with search, filtering, detail drawer, status controls, and mock creation
+- Interactive Workflow Builder with node library, visual canvas, configuration panel, templates, validation, test run simulation, and mock publishing
+- Automations management with filters, health visualization, cards, run history, run detail inspection, and mock creation
+- Integrations catalog with category filters, setup dialog, connected configuration panel, test connection feedback, and activity monitoring
+- Analytics with executive KPIs, performance charts, business impact, ranked agent and automation tables, category breakdowns, failure analytics, and export feedback
+- Activity monitoring with event filters, timeline, detail drawer, execution traces, error detail, human review context, live-update simulation, and audit log
+- Settings with editable workspace defaults, team roles, notifications, AI defaults, security controls, masked demo API keys, billing/plan usage, and local feedback
+- Reopenable onboarding checklist and keyboard command menu with Ctrl+K / Cmd+K navigation
+
+## Product Areas
+
+- Overview Dashboard
+- AI Agents
+- Workflow Builder
+- Automations
+- Integrations
+- Analytics
+- Activity
+- Settings
 
 ## Tech Stack
 
@@ -39,10 +42,48 @@ Add final project screenshots here after publishing the first visual case study.
 - CSS
 - lucide-react
 
-## Local Setup
+## Architecture
+
+The app uses a clean client-side React structure:
+
+```text
+src/
+  components/
+  data/
+  layouts/
+  pages/
+  styles/
+  App.jsx
+  main.jsx
+```
+
+Reusable components are organized by product area, while mock data lives in `src/data`. Navigation is intentionally lightweight and client-side so the UI remains easy to adapt for CodePen or static portfolio demos.
+
+## Accessibility
+
+- Semantic page regions, headings, buttons, forms, tables, and dialogs
+- Keyboard-accessible navigation, filters, cards, drawers, dialogs, workflow nodes, and command menu
+- Visible focus states across interactive controls
+- Status text in addition to color indicators
+- `aria-live` feedback for local status/toast updates
+- Escape support for dialogs, drawers, onboarding, and command menu
+- Reduced-motion support through `prefers-reduced-motion`
+
+## Responsive Design
+
+WTG Flow AI is desktop-first for a premium dashboard presentation, with tablet and mobile layouts that preserve core functionality. Cards collapse to single-column layouts, tables remain scrollable or compact, drawers become full-width where appropriate, and the app shell avoids horizontal overflow on small screens.
+
+## Local Development
+
+Install dependencies:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
 npm run dev
 ```
 
@@ -58,22 +99,53 @@ Preview the production build:
 npm run preview
 ```
 
-## Portfolio Purpose
+## Screenshots
 
-WTG Flow AI is designed as a portfolio-grade interface project that demonstrates product thinking, reusable React architecture, dashboard UI composition, client-side filtering, accessible drawer/dialog interactions, visual workflow design, local workflow simulation, operations monitoring, integration setup flows, analytics reporting, activity traceability, responsive CSS, and visual polish suitable for GitHub, CodePen, and Dribbble.
+Screenshots will be captured separately after final visual QA.
 
-## Dribbble
+Placeholder directory:
 
-Dribbble case study link: _Coming soon_
+```text
+docs/screenshots/
+```
+
+Recommended captures:
+
+- Overview dashboard
+- AI Agents grid and detail drawer
+- Workflow Builder canvas
+- Automations operations view
+- Integrations catalog
+- Analytics dashboard
+- Activity trace detail
+- Settings workspace controls
 
 ## CodePen
 
 Interactive UI demo link: _Coming soon_
 
-## Future Roadmap
+Recommended adaptation: convert the core app shell, mock data, and CSS into a single CodePen demo focused on Overview, Workflow Builder, command menu, and one detail drawer interaction.
 
-- Phase 2: AI Agents page with agent cards, filters, detail panels, and mock creation flow
-- Phase 3: Workflow Builder with interactive nodes, configuration, templates, validation, test execution, and publishing
-- Phase 4: Automations and Integrations pages with filtering, run history, setup states, configuration, and activity monitoring
-- Phase 5: Analytics and Activity views with executive reporting, performance trends, execution traces, error details, and audit timelines
-- Phase 6: Authentication, backend, database, and API integration
+## Dribbble
+
+Dribbble case study link: _Coming soon_
+
+Recommended presentation shots:
+
+- Workflow Builder canvas as the hero shot
+- Analytics executive reporting view
+- AI Agents management grid with detail drawer
+- Integrations catalog and connected configuration panel
+- Settings and onboarding polish as supporting screens
+
+## Roadmap
+
+- Add screenshot assets and case-study narrative
+- Prepare a CodePen-friendly single-file demo variant
+- Add optional lightweight route persistence
+- Add component tests for filtering and dialog interactions
+- Connect to a real backend/API only in a future non-portfolio phase
+
+## License / Portfolio Use
+
+This project is intended as a personal portfolio/demo interface. Product names, data, metrics, users, API keys, workflows, and integrations shown in the UI are fictional.

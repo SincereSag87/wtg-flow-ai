@@ -18,7 +18,7 @@ function Sidebar({ activePage, onPageChange }) {
         {navItems.map((item) => {
           const Icon = item.icon
           const isActive = item.label === activePage
-          const isEnabled = ['Overview', 'AI Agents', 'Workflow Builder', 'Automations', 'Integrations', 'Analytics', 'Activity'].includes(item.label)
+          const isEnabled = ['Overview', 'AI Agents', 'Workflow Builder', 'Automations', 'Integrations', 'Analytics', 'Activity', 'Settings'].includes(item.label)
 
           return (
             <button
@@ -44,7 +44,8 @@ function Sidebar({ activePage, onPageChange }) {
         <div className="workspace-icon">W</div>
         <div>
           <span>Workspace</span>
-          <strong>Wannamaker Ops</strong>
+          <strong>WTG Operations</strong>
+          <span>Scale Plan</span>
         </div>
         <ChevronsUpDown size={16} aria-hidden="true" />
       </div>
